@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resume · Portfolio</title>
+<title>심인식 · 이력서</title>
+<meta name="description" content="심인식 — 25년 경력 풀스택 엔지니어 · AI 자동화 · 광고/마케팅 전문가">
 <style>
   :root{
     --bg:#0f172a; --card:#ffffff; --ink:#1e293b; --muted:#64748b;
@@ -15,9 +16,9 @@
     font-family:-apple-system,"Segoe UI","Malgun Gothic","맑은 고딕",Roboto,sans-serif;
     color:var(--ink); line-height:1.65; padding:40px 16px;
   }
-  .wrap{max-width:840px; margin:0 auto;}
+  .wrap{max-width:880px; margin:0 auto;}
   header.hero{
-    background:var(--card); border-radius:20px 20px 0 0; padding:44px 44px 32px;
+    background:var(--card); border-radius:20px 20px 0 0; padding:44px 44px 34px;
     border-bottom:4px solid var(--accent);
     display:flex; gap:30px; align-items:center;
   }
@@ -26,36 +27,42 @@
     border:4px solid var(--accent-soft); box-shadow:0 10px 24px -6px rgba(37,99,235,.45);
   }
   .hero-text{flex:1; min-width:0;}
-  header.hero h1{margin:0 0 6px; font-size:2.1rem; letter-spacing:-.5px;}
-  header.hero .role{color:var(--accent); font-weight:600; font-size:1.05rem; margin-bottom:14px;}
+  header.hero h1{margin:0 0 6px; font-size:2.2rem; letter-spacing:-.5px;}
+  header.hero h1 .sub{font-weight:400; color:var(--muted); font-size:1rem;}
+  header.hero .role{color:var(--accent); font-weight:600; font-size:1.03rem; margin-bottom:14px;}
   header.hero .contact{display:flex; flex-wrap:wrap; gap:8px 18px; color:var(--muted); font-size:.92rem;}
   header.hero .contact a{color:var(--muted); text-decoration:none;}
   header.hero .contact a:hover{color:var(--accent);}
   main{background:var(--card); border-radius:0 0 20px 20px; padding:8px 44px 48px; box-shadow:0 30px 60px -25px rgba(2,6,23,.6);}
-  .section{padding:24px 0; border-top:1px solid var(--line);}
+  .section{padding:26px 0; border-top:1px solid var(--line);}
   .section:first-child{border-top:none;}
-  h2{font-size:1.15rem; margin:0 0 14px; color:var(--bg); display:flex; align-items:center; gap:10px;}
+  h2{font-size:1.18rem; margin:0 0 16px; color:var(--bg); display:flex; align-items:center; gap:10px;}
+  h2 .en{color:var(--muted); font-weight:500; font-size:.85rem;}
   h2::before{content:""; width:6px; height:18px; background:var(--accent); border-radius:3px; display:inline-block;}
   p{margin:.2em 0 .6em;}
   table{width:100%; border-collapse:collapse; font-size:.95rem;}
-  th,td{text-align:left; padding:10px 12px; vertical-align:top;}
-  th{background:var(--accent-soft); color:#1e40af; width:130px; border-radius:8px;}
+  th,td{text-align:left; padding:11px 14px; vertical-align:top;}
+  th{background:var(--accent-soft); color:#1e40af; white-space:nowrap; border-radius:8px;}
   tr+tr td,tr+tr th{border-top:1px solid var(--line);}
+  td.k{font-weight:600; color:var(--bg); white-space:nowrap; width:150px;}
   ul{margin:.2em 0 .2em; padding-left:1.2em;}
-  ul ul{margin-top:.3em;}
-  li{margin:.25em 0;}
-  li strong{color:var(--bg);}
-  .tag{display:inline-block; background:var(--accent-soft); color:#1e40af; padding:2px 10px; border-radius:999px; font-size:.8rem; margin:2px 4px 2px 0;}
+  ul ul{margin-top:.35em;}
+  li{margin:.32em 0;}
+  .exp-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px 12px; margin-bottom:6px;}
+  .exp-head .org{font-weight:700; color:var(--bg); font-size:1.02rem;}
+  .exp-head .period{color:var(--accent); font-size:.88rem; font-weight:600;}
+  .block{margin:0 0 18px;}
+  .block:last-child{margin-bottom:0;}
   footer{text-align:center; color:#cbd5e1; font-size:.8rem; margin-top:22px;}
-  @media (max-width:560px){
+  @media (max-width:580px){
     header.hero,main{padding-left:24px; padding-right:24px;}
     header.hero{flex-direction:column; text-align:center;}
     header.hero .contact{justify-content:center;}
-    header.hero h1{font-size:1.7rem;}
-    th{width:auto;}
+    header.hero h1{font-size:1.8rem;}
+    td.k{width:auto;}
   }
   @media print{
-    body{background:#fff; padding:0;}
+    body{background:#fff; padding:0; color:#000;}
     main,header.hero{box-shadow:none; border-radius:0;}
   }
 </style>
@@ -63,60 +70,94 @@
 <body>
   <div class="wrap">
     <header class="hero">
-      <img class="avatar" src="profile.jpg" alt="Profile photo">
+      <img class="avatar" src="profile.jpg" alt="심인식 프로필 사진">
       <div class="hero-text">
-        <h1>심인식 <span style="font-weight:400;color:var(--muted);font-size:1rem;">| Developer &amp; Marketer</span></h1>
-        <div class="role">AI 미디어 자동화 · 데이터 주도형 마케팅 · 시스템 아키텍처</div>
+        <h1>심인식 <span class="sub">| Insik Sim</span></h1>
+        <div class="role">풀스택 엔지니어 · AI 자동화 · 광고/마케팅 전문가</div>
         <div class="contact">
-          <span>📍 Da Nang, Vietnam</span>
+          <a href="tel:010-3078-4854">📞 010-3078-4854</a>
           <a href="mailto:insick114@gmail.com">✉️ insick114@gmail.com</a>
-          <a href="https://github.com/minsukim86">🔗 github.com/minsukim86</a>
+          <a href="https://cutone.app" target="_blank" rel="noopener">🔗 cutone.app</a>
+          <a href="https://github.com/minsukim86" target="_blank" rel="noopener">🐙 github.com/minsukim86</a>
         </div>
       </div>
     </header>
 
     <main>
       <div class="section">
-        <h2>About Me</h2>
-        <p>데이터 엔지니어링과 AI 자동화 파이프라인 설계 및 대규모 시스템 아키텍처 구축에 탁월한 역량을 갖추고 있으며, 이를 활용한 데이터 주도형 마케팅 전략 수립에 강점이 있습니다.</p>
+        <h2>Professional Summary <span class="en">전문 요약</span></h2>
+        <p>25년의 개발 경력을 보유한 풀스택 엔지니어입니다. Python, PHP, JavaScript 생태계 전반에 걸친 깊은 이해를 바탕으로 복잡한 자동화 파이프라인 설계 및 대규모 시스템 아키텍처 구축에 탁월한 역량을 갖추고 있습니다. 최근에는 AI 에이전트 프레임워크를 활용한 콘텐츠 자동화 및 실시간 데이터 분석 플랫폼 운영을 통해 비즈니스 생산성을 혁신하는 데 집중하고 있으며, 이를 활용한 전문적인 광고·마케팅 작업 전문가로 활동하고 있습니다.</p>
       </div>
 
       <div class="section">
-        <h2>Core Skills</h2>
+        <h2>Core Technical Skills <span class="en">핵심 기술</span></h2>
         <table>
-          <tr><th>분야</th><th>상세 내용</th></tr>
-          <tr><td>기술 스택</td><td>Python, PHP, JS, Docker, FFmpeg, Bybit API</td></tr>
-          <tr><td>AI &amp; 마케팅</td><td>AI 자동화 파이프라인, 현지 마케팅 전략, 데이터 분석</td></tr>
+          <tr><td class="k">Languages</td><td>Python, PHP, JavaScript, TypeScript, SQL</td></tr>
+          <tr><td class="k">AI &amp; Automation</td><td>OpenAI API, Gemini API, Claude Code, OpenClaw, ElevenLabs, Fish Speech</td></tr>
+          <tr><td class="k">Infrastructure &amp; Tools</td><td>Docker, FFmpeg, Bybit API, Telegram API, Git, Linux</td></tr>
         </table>
       </div>
 
       <div class="section">
-        <h2>Professional Experience</h2>
+        <h2>Professional Experience <span class="en">경력 사항</span></h2>
+        <div class="block">
+          <div class="exp-head">
+            <span class="org">Independent Consultant &amp; Entrepreneur</span>
+            <span class="period">2025.05 – 현재</span>
+          </div>
+          <ul>
+            <li>AI 미디어 자동화 파이프라인(CutOne / GiftRescue_Pro)을 구축하여 영상 제작 프로세스 80% 이상 자동화</li>
+            <li>Bybit API를 연동한 암호화폐 선물 거래 봇 개발 및 PnL 실시간 모니터링 시스템 구현</li>
+            <li>온라인 커뮤니티 플랫폼의 기술 아키텍처 유지보수 및 회원 관리 자동화 툴 개발</li>
+            <li>데이터 주도형 콘텐츠 채널 운영 및 viewer 데이터 분석 모델 구현</li>
+          </ul>
+        </div>
+        <div class="block">
+          <div class="exp-head">
+            <span class="org">TS ENTERTAINMENT</span>
+            <span class="period">개발 · 마케팅</span>
+          </div>
+          <ul>
+            <li>개발자 및 마케팅 담당자로 근무</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Key Projects <span class="en">주요 프로젝트</span></h2>
+        <table>
+          <tr><th>프로젝트</th><th>주요 성과</th></tr>
+          <tr><td class="k">AI 콘텐츠 자동화 서비스</td><td>파이썬 기반 멀티 API 파이프라인 설계를 통한 생산성 300% 향상</td></tr>
+          <tr><td class="k">금융 시장 분석 봇</td><td>자동 매매 알고리즘 및 리스크 관리 엔진 구현</td></tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>광고 · 마케팅 경력 <span class="en">Advertising &amp; Marketing</span></h2>
         <ul>
-          <li><strong>Independent Consultant &amp; Entrepreneur (2025.05 – 현재)</strong>
-            <ul>
-              <li>AI 미디어 자동화 파이프라인(CutOne / GiftRescue_Pro) 구축</li>
-              <li>베트남 다낭 로컬 비즈니스 마케팅 전략 수립 및 집행</li>
-              <li>'다낭 투데이' 채널 운영 및 viewer 데이터 분석 모델 구현</li>
-            </ul>
-          </li>
-          <li><strong>TS ENTERTAINMENT</strong>
-            <ul>
-              <li>개발자 및 마케팅 담당자로 근무</li>
-            </ul>
-          </li>
+          <li><strong>데이터 주도형 마케팅 캠페인 실행:</strong> 커뮤니티(Team Fishy)를 대상으로 실시간 데이터 분석을 통한 맞춤형 홍보 전략 수립 및 집행</li>
+          <li><strong>마케팅 자동화 파이프라인:</strong> 텔레그램 및 각종 SNS 플랫폼 내 홍보 메시지 자동 발송 시스템 설계, 메시지 가독성 최적화</li>
+          <li><strong>콘텐츠 자동화 전략:</strong> 검색 유도형 홍보 방식과 자동 영상 생성 파이프라인을 결합하여 콘텐츠 확산 및 도달율 최적화</li>
         </ul>
       </div>
 
       <div class="section">
-        <h2>Key Projects</h2>
+        <h2>베트남 현지 마케팅 <span class="en">Vietnam Local Marketing</span></h2>
         <ul>
-          <li><strong>AI 콘텐츠 자동화 서비스:</strong> 파이썬 기반 파이프라인 설계를 통한 생산성 300% 향상</li>
-          <li><strong>금융 시장 분석 봇:</strong> 자동 매매 알고리즘 및 리스크 관리 엔진 구현</li>
+          <li><strong>현지 로컬 비즈니스 컨설팅:</strong> 다낭 지역을 중심으로 로컬 비즈니스 마케팅 전략 수립 및 운영, 현지 시장 환경에 최적화된 캠페인 집행</li>
+          <li><strong>데이터 주도형 현지 캠페인:</strong> 베트남 타겟 커뮤니티 운영 및 실시간 데이터를 활용한 맞춤형 홍보 전략 실행으로 브랜드 인지도 향상</li>
+          <li><strong>마케팅 자동화 파이프라인 구축:</strong> 베트남 시장 환경에 적합한 자동화 툴 설계, 오픈채팅 및 SNS 스팸 차단 로직 대응 및 가독성 최적화</li>
+          <li><strong>로컬 미디어 채널 운영:</strong> '다낭 투데이' 뉴스 채널 운영 및 콘텐츠 자동화 파이프라인 운영, 베트남 로컬 viewer 데이터 분석 모델 구현</li>
+          <li><strong>핵심 역량:</strong> 현지 로컬 비즈니스 전략 · 다낭 지역 타겟 마케팅 · 베트남 시장 데이터 분석 · 로컬 커뮤니티 네트워킹 · AI 프롬프트 엔지니어링</li>
         </ul>
       </div>
+
+      <div class="section">
+        <h2>Education <span class="en">학력</span></h2>
+        <p>숭실대학교 전산원 · 소프트웨어 전공</p>
+      </div>
     </main>
-    <footer>© 2026 · Built as a static page</footer>
+    <footer>© 2026 심인식 (Insik Sim) · Resume</footer>
   </div>
 </body>
 </html>
