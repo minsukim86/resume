@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume · Portfolio</title>
+<style>
+  :root{
+    --bg:#0f172a; --card:#ffffff; --ink:#1e293b; --muted:#64748b;
+    --accent:#2563eb; --accent-soft:#dbeafe; --line:#e2e8f0;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:linear-gradient(160deg,#0f172a,#1e3a8a);
+    font-family:-apple-system,"Segoe UI","Malgun Gothic","맑은 고딕",Roboto,sans-serif;
+    color:var(--ink); line-height:1.65; padding:40px 16px;
+  }
+  .wrap{max-width:840px; margin:0 auto;}
+  header.hero{
+    background:var(--card); border-radius:20px 20px 0 0; padding:44px 44px 32px;
+    border-bottom:4px solid var(--accent);
+    display:flex; gap:30px; align-items:center;
+  }
+  .avatar{
+    width:128px; height:128px; border-radius:50%; object-fit:cover; flex-shrink:0;
+    border:4px solid var(--accent-soft); box-shadow:0 10px 24px -6px rgba(37,99,235,.45);
+  }
+  .hero-text{flex:1; min-width:0;}
+  header.hero h1{margin:0 0 6px; font-size:2.1rem; letter-spacing:-.5px;}
+  header.hero .role{color:var(--accent); font-weight:600; font-size:1.05rem; margin-bottom:14px;}
+  header.hero .contact{display:flex; flex-wrap:wrap; gap:8px 18px; color:var(--muted); font-size:.92rem;}
+  header.hero .contact a{color:var(--muted); text-decoration:none;}
+  header.hero .contact a:hover{color:var(--accent);}
+  main{background:var(--card); border-radius:0 0 20px 20px; padding:8px 44px 48px; box-shadow:0 30px 60px -25px rgba(2,6,23,.6);}
+  .section{padding:24px 0; border-top:1px solid var(--line);}
+  .section:first-child{border-top:none;}
+  h2{font-size:1.15rem; margin:0 0 14px; color:var(--bg); display:flex; align-items:center; gap:10px;}
+  h2::before{content:""; width:6px; height:18px; background:var(--accent); border-radius:3px; display:inline-block;}
+  p{margin:.2em 0 .6em;}
+  table{width:100%; border-collapse:collapse; font-size:.95rem;}
+  th,td{text-align:left; padding:10px 12px; vertical-align:top;}
+  th{background:var(--accent-soft); color:#1e40af; width:130px; border-radius:8px;}
+  tr+tr td,tr+tr th{border-top:1px solid var(--line);}
+  ul{margin:.2em 0 .2em; padding-left:1.2em;}
+  ul ul{margin-top:.3em;}
+  li{margin:.25em 0;}
+  li strong{color:var(--bg);}
+  .tag{display:inline-block; background:var(--accent-soft); color:#1e40af; padding:2px 10px; border-radius:999px; font-size:.8rem; margin:2px 4px 2px 0;}
+  footer{text-align:center; color:#cbd5e1; font-size:.8rem; margin-top:22px;}
+  @media (max-width:560px){
+    header.hero,main{padding-left:24px; padding-right:24px;}
+    header.hero{flex-direction:column; text-align:center;}
+    header.hero .contact{justify-content:center;}
+    header.hero h1{font-size:1.7rem;}
+    th{width:auto;}
+  }
+  @media print{
+    body{background:#fff; padding:0;}
+    main,header.hero{box-shadow:none; border-radius:0;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img class="avatar" src="profile.jpg" alt="Profile photo">
+      <div class="hero-text">
+        <!-- ▼▼ 이름/연락처를 본인 정보로 바꾸세요 ▼▼ -->
+        <h1>홍길동 <span style="font-weight:400;color:var(--muted);font-size:1rem;">| Developer &amp; Marketer</span></h1>
+        <div class="role">AI 미디어 자동화 · 데이터 주도형 마케팅 · 시스템 아키텍처</div>
+        <div class="contact">
+          <span>📍 Da Nang, Vietnam</span>
+          <a href="mailto:deung4409@gmail.com">✉️ deung4409@gmail.com</a>
+          <!-- <a href="https://github.com/USERNAME">🔗 GitHub</a> -->
+        </div>
+        <!-- ▲▲ 이름/연락처를 본인 정보로 바꾸세요 ▲▲ -->
+      </div>
+    </header>
+
+    <main>
+      <div class="section">
+        <h2>About Me</h2>
+        <p>데이터 엔지니어링과 AI 자동화 파이프라인 설계 및 대규모 시스템 아키텍처 구축에 탁월한 역량을 갖추고 있으며, 이를 활용한 데이터 주도형 마케팅 전략 수립에 강점이 있습니다.</p>
+      </div>
+
+      <div class="section">
+        <h2>Core Skills</h2>
+        <table>
+          <tr><th>분야</th><th>상세 내용</th></tr>
+          <tr><td>기술 스택</td><td>Python, PHP, JS, Docker, FFmpeg, Bybit API</td></tr>
+          <tr><td>AI &amp; 마케팅</td><td>AI 자동화 파이프라인, 현지 마케팅 전략, 데이터 분석</td></tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Professional Experience</h2>
+        <ul>
+          <li><strong>Independent Consultant &amp; Entrepreneur (2025.05 – 현재)</strong>
+            <ul>
+              <li>AI 미디어 자동화 파이프라인(CutOne / GiftRescue_Pro) 구축</li>
+              <li>베트남 다낭 로컬 비즈니스 마케팅 전략 수립 및 집행</li>
+              <li>'다낭 투데이' 채널 운영 및 viewer 데이터 분석 모델 구현</li>
+            </ul>
+          </li>
+          <li><strong>TS ENTERTAINMENT</strong>
+            <ul>
+              <li>개발자 및 마케팅 담당자로 근무</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Key Projects</h2>
+        <ul>
+          <li><strong>AI 콘텐츠 자동화 서비스:</strong> 파이썬 기반 파이프라인 설계를 통한 생산성 300% 향상</li>
+          <li><strong>금융 시장 분석 봇:</strong> 자동 매매 알고리즘 및 리스크 관리 엔진 구현</li>
+        </ul>
+      </div>
+    </main>
+    <footer>© 2026 · Built as a static page</footer>
+  </div>
+</body>
+</html>
